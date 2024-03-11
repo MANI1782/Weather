@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
-
-
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
-    <link rel="stylesheet" href="style.css">
-
 </head>
 
-<body>
+<body id="name">
 
+    <style>
+        body {
+            background-image: url("https://t3.ftcdn.net/jpg/06/66/23/66/240_F_666236649_l10vI5QKHkL1EHruKT3SqaJtuSdzFf0t.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
 
+        form {
+            display: grid;
+            place-items: center;
+        }
 
+        body .main {
 
-
-    <div class="card" style="width:25rem; height: 30rem;">
-        <img src="https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg"
-            class="card-img-top" alt="...">
-        <div class="card-body">
-            <h2 class="card-title text-center ">Weather </h5>
+            background-color: rgb(216, 194, 166)
+        }
+    </style>
+    <div id="ok" class="card main mx-auto " style="width:18rem;">
+        <img src="https://images.unsplash.com/photo-1592601250984-da0dc45e25f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYXRoZXIlMjBhcHB8ZW58MHx8MHx8fDA%3D"
+            alt="...">
+        <div class="card-body titlecenter">
+            <h2 class="card-title text-center ">Weather</h5>
                 <form action="/" method="post">
-                    <label class="text-center" for="CityName">City Name</label>
-                    <input class="text-center" type="text" name="CityName" id="">
-                    <button class="btn btn-primary text-center" type="submit">CHECK</button>
+                    <label for="CityName">City Name</label>
+                    <input class="text-center mx-auto" type="text" name="CityName" id="">
+                    <button class="btn btn-primary m-2 " type="submit">CHECK</button>
                 </form>
+
+
         </div>
     </div>
 
 
-
-
-
+    <script src="apk.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="app.js"></script>
 </body>
 
 </html>
