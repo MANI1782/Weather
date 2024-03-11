@@ -3,7 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(24, 18, 18);
 }
 .heading{
     color: white;
