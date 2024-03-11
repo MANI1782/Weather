@@ -29,7 +29,7 @@ app.post("/", function (req, res) {
             console.log(overcast)
             console.log(temp)
 
-            res.write("<h1> THE TEMPERATURE in " + city + " IS " + temp + "degree celsius..</h1>")
+            res.write("<h1> The temperature in " + city + " is " + temp + " degree celsius..</h1>")
             res.write("<img src=" + ImageUrl + ">")
             res.send();
         })

@@ -1,12 +1,4 @@
-body .main{
 
-    background-color: rgb(216, 194, 166)
-    
-}
 #name {
     background-color: black
-}
-form{
-    display: grid;
-   place-items: center;
 }
